@@ -6,5 +6,15 @@ harry = Student.new(
   'house' => 'Gryffindor',
   'age' => 20
 )
-
 harry.save
+
+ron = Student.new(
+  'first_name' => 'Ron',
+  'last_name' => 'Weasley',
+  'house' => 'Gryffindor',
+  'age' => 20
+)
+ron.save
+
+
+Student.all

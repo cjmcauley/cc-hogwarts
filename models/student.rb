@@ -20,6 +20,11 @@ class Student
     values = [@first_name, @last_name, @house, @age]
     result = SqlRunner.run(sql, values)
     @id = result.first['id'].to_i
-    p @id
+  end
+
+  def self.all
+    sql = 'SELECT * FROM students'
+    result = SqlRunner.run(sql)
+    return result.to_a
   end
 end
