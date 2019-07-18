@@ -1,7 +1,6 @@
 require_relative '../models/student'
 
 Student.delete_all
-
 harry = Student.new(
   'first_name' => 'Harry',
   'last_name' => 'Potter',
@@ -17,5 +16,3 @@ ron = Student.new(
   'age' => 20
 )
 ron.save
-
-p Student.all
