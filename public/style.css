@@ -2,6 +2,11 @@ body {
   font-family: sans-serif;
 }
 
+a{
+  color: black;
+  list-style-type: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -10,11 +15,12 @@ body {
 }
 
 table {
-  width: 400px;
+  width: 600px;
   margin: auto;
+  background-color: #ffffff;
 }
 
-th {
+th, td {
   text-align: left;
 }
 

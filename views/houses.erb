@@ -1,7 +1,7 @@
 
 <% @houses.each do |h| %>
   <section>
-    <h2><%= h.name %></h2>
+    <h2 class="houses"><%= h.name %></h2>
     <img class="img-medium" src="<%= h.logo_url %>" alt="<%= h.name %> logo">
   </section>
 <% end %>
