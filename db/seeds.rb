@@ -18,4 +18,4 @@ ron = Student.new(
 )
 ron.save
 
-Student.all
+p Student.all

@@ -33,8 +33,9 @@ class Student
 
   def self.all
     sql = 'SELECT * FROM students'
-    result = SqlRunner.run(sql)
-    return result.to_a
+    results = SqlRunner.run(sql)
+    results = results.map { |s| Student.new(s) }
+    return results
   end
 
   def self.delete_all
