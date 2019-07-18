@@ -1,7 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 50px;
+}
+
+table {
+  width: 400px;
+  margin: auto;
+}
+
+th {
+  text-align: left;
+}
+
 .img-medium {
-  max-width: 300px
+  max-width: 300px;
 }
 
 .img-small {
-  max-width: 50px
+  max-width: 50px;
+  align-content: center;
 }

@@ -2,15 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Hogwarts</title>
   </head>
   <body>
-    <ul>
-      <li><a href="/students/new">New Student</a></li>
-      <li><a href="/students">Students</a></li>
-      <li><a href="/houses">Houses</a></li>
-    </ul>
-    <%= yield %>
+    <div class="container">
+      <ul>
+        <li><a href="/students/new">New Student</a></li>
+        <li><a href="/students">Students</a></li>
+        <li><a href="/houses">Houses</a></li>
+      </ul>
+      <%= yield %>
+    </div>
   </body>
 </html>

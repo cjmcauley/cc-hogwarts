@@ -1,18 +1,17 @@
-<table>
+<table class="flex-item">
   <tr>
       <th>First Name</th>
       <th>Last Name</th>
-      <th>House Name</th>
+      <th>House</th>
+      <th></th>
       <th>Age</th>
   </tr>
     <% @students.each do |s| %>
         <tr>
           <td><%= s.first_name %></td>
           <td><%= s.last_name %></td>
-          <td>
-            <img class ="img-small" src="<%= s.house.logo_url %>" alt="">
-            <%= s.house.name %>
-          </td>
+          <td><img class ="img-small" src="<%= s.house.logo_url %>" alt=""></td>
+          <td><%= s.house.name %></td>
           <td><%= s.age %></td>
         </tr>
     <% end %>
