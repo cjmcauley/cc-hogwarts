@@ -9,7 +9,10 @@
         <tr>
           <td><%= s.first_name %></td>
           <td><%= s.last_name %></td>
-          <td><%= s.house.name %></td>
+          <td>
+            <img class ="img-small" src="<%= s.house.logo_url %>" alt="">
+            <%= s.house.name %>
+          </td>
           <td><%= s.age %></td>
         </tr>
     <% end %>
