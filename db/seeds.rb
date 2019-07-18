@@ -1,5 +1,7 @@
 require_relative '../models/student'
 
+Student.delete_all
+
 harry = Student.new(
   'first_name' => 'Harry',
   'last_name' => 'Potter',

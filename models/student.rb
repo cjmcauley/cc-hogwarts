@@ -27,4 +27,9 @@ class Student
     result = SqlRunner.run(sql)
     return result.to_a
   end
+
+  def self.delete_all
+    sql = 'DELETE FROM students'
+    SqlRunner.run(sql)
+  end
 end
