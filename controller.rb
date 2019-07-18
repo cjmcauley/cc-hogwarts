@@ -16,5 +16,6 @@ post '/students' do
 end
 
 get '/students/new' do
+  @houses = House.all
   erb(:new_student)
 end

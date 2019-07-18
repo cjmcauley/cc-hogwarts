@@ -1,6 +1,7 @@
 require_relative '../models/student'
 require_relative '../models/house'
 
+Student.delete_all
 House.delete_all
 gryffindor = House.new(
   'name' => 'Gryffindor',
@@ -23,7 +24,6 @@ slytherin = House.new(
 )
 slytherin.save
 
-Student.delete_all
 harry = Student.new(
   'first_name' => 'Harry',
   'last_name' => 'Potter',
