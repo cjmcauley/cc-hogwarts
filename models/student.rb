@@ -22,6 +22,15 @@ class Student
     @id = result.first['id'].to_i
   end
 
+  def self.find(id)
+    sql = '
+    SELECT * FROM students
+    WHERE id = $1'
+    results = SqlRunner.run(sql, [id])
+    return Student.new(results.first) unless results.count.zero?
+    return nil
+  end
+
   def self.all
     sql = 'SELECT * FROM students'
     result = SqlRunner.run(sql)
