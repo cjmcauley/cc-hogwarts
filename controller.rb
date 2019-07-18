@@ -8,6 +8,13 @@ get '/students' do
   erb(:students)
 end
 
+post '/students' do
+  p params
+  @student = Student.new(params)
+  @student.save
+  redirect '/students'
+end
+
 get '/students/new' do
   erb(:new_student)
 end
