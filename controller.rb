@@ -19,3 +19,8 @@ get '/students/new' do
   @houses = House.all
   erb(:new_student)
 end
+
+get '/houses' do
+  @houses = House.all
+  erb(:houses)
+end
